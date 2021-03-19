@@ -5,7 +5,7 @@ const login = ( email , passwd , callback )=>{
       // consultar en BD info faltante
       bd_data={
         'email':email,
-        'depto':'VEntas',
+        'depto':'Ventas',
         'phone':'5544332211'
       }
     } else {
