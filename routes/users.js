@@ -21,7 +21,8 @@ router.post('/login',(req,res,next)=>{
         datos:d
       };
 
-      const clave= "dios1234";
+      const clave= process.env.SECRETO || "dios1234";
+      console.log(clave);
       const token = jwt.sign(payload,clave,{expiresIn : 60*5});
       ses.token=token;
       
